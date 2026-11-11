@@ -106,8 +106,8 @@ elif shape_choice=="cylinder":
     elif "curved surface area"in command or "lateral surface area"in command or "csa"in command or "lsa" in command:
         c_s_a=2*PI*r*h
         print("AI Result:The curved or lateral surface area of the cylinder is: ",c_s_a)
-    elif "total surface area"in command or "tsa" in commmand:
-        t_s_a=2*PI**r*(r+h)
+    elif "total surface area"in command or "tsa" in command:
+        t_s_a=2*PI*r*(r+h)
         print("AI Result:The total surface area of the cylinder is: ",t_s_a)
     elif "volume"in command or "v" in command:
         v=PI*(r**2)*h
@@ -168,17 +168,17 @@ elif shape_choice=="cone":
         d=2*r
         print("AI Result:The diameter of the base of the cone is: ",d)
     elif "slant height" in command or 'sh' in command:
-        s_l=sqrt((r**2)+(h**2))
+        s_l=square_root((r**2)+(h**2))
         print("AI Result:The slant height of the cone is: ",s_l)
     elif " base area" in command:
         a= PI*(r**2)
         print("AI Result:The base area of the cone is: ",a)
     elif "curved surface area" in command or 'lateral surface area' in command or 'lsa' in command or 'tsa' in command:
-        c_s_a=PI*r*(sqrt((r**2)+(h**2)))
+        c_s_a=PI*r*(square_root((r**2)+(h**2)))
         print("AI Result:The curved or lateral surface area of the cone is: ",c_s_a)
     elif "total surface area" in command or 'tsa' in command:
         t_s_a=PI*r*(r+(sqrt((r**2)+(h**2))))
-        print('AI Result:The total surface area of the cone is: ',t_s_s)
+        print('AI Result:The total surface area of the cone is: ',t_s_a)
     elif 'volume' in command or 'v' in command:
         v=(1/3)*PI*(r**2)*h
         print('AI Result:The volume of the cone is: ',v)
@@ -211,7 +211,7 @@ elif shape_choice=="hemisphere":
         c=2*PI*(r**2)
         print('AI Result:The curved or lateral surfae area of the hemisphere is: ',c)
     elif'total surface area' in command or 'tsa' in command:
-        t=3*PI(r**2)
+        t=3*PI*(r**2)
         print('AI Result:The total surface area of the hemisphere is: ',t)
     elif'circumference of the base' in command:
         c=2*PI*r
