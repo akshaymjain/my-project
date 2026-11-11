@@ -7,7 +7,7 @@ print("I can understand the natural language requests to claculate the propertie
 print("----------------------------------------------------------------------")
 command=input("AI: Hey! I am your 3D geometry AI Asisstent.Which property do you want to calculate today? ").lower()
 valid_shapes=["cube","cuboid","cylinder",'frustum',"cone","hemisphere","sphere"]
-shape_choice=input("Enter the 3D shape that you need to calculate: ")
+shape_choice=input("Enter the 3D shape that you need to calculate: ").strip().lower()
 if shape_choice not in valid_shapes:
     print("AI Error:shape is not recognised.Please enter the shape from valid_shapes")
 elif shape_choice=="cube":
