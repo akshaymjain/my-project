@@ -137,7 +137,7 @@ elif shape_choice=='frustum':
         d=2*r
         print("AI Result:The smaller diameter of the frustum is: ",d)
     elif 'slant height'in command or 'sl' in command:
-        l=sqrt((h**2)+((R-r)**2))
+        l=square_root((h**2)+((R-r)**2))
         print("AI Result:The slant height of the frustum is: ",l)
     elif 'difference between radius'in command or 'diff btw radii' in command:
         Diff=R-r
