@@ -70,7 +70,7 @@ elif shape_choice=="cuboid":
     elif "lateral_surface_area"in command or "lsa" in command:
         lateral_surface_area=2*h*(l+b)
         print("AI Result:The lateral surface area of the cuboid is: ",lateral_surface_area)
-    elif "area of base" in command or a in command:
+    elif "area of base" in command or'base area'in command:
         a_b=l*b
         print("AI Result:The area of base of cuboid is: ",a_b)
     elif "face diogonal" in command or "fd" in command:
