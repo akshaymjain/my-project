@@ -241,7 +241,7 @@ elif shape_choice=='sphere':
         print("AI Result: The circumference of the sphere is: ",c)
     elif " total surface area" in command or 'tsa' in command:
         t_s_a=4*PI*(r**2)
-        print('AI Result: The total surface  area of the sphere is: ',a)
+        print('AI Result: The total surface  area of the sphere is: ',t_s_a)
     elif " area" in command or'a' in command:
         a=PI*(r**2)
         print("AI Result: The  area of the sphere is: ",a)
